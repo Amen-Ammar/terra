@@ -16,10 +16,11 @@ You can always as well set it up manually.
 1. **Setting up Angular Client App:**
 
    ```bash
-   npm i --legacy-peer-deps
-   ng serve --open
+   - npm i --legacy-peer-deps
+   - ng serve --open
 
 2. **Setting up Laravel Server API:**
 
    ```bash
-   composer install
+   - composer install
+   - php artisan serve
