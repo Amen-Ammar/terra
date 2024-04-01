@@ -1,0 +1,19 @@
+/* task-card.component.css */
+mat-card {
+    margin-bottom: 20px;
+}
+
+/* task-list.component.css */
+.columns {
+    display: flex;
+    justify-content: space-around;
+}
+
+.column {
+    flex: 1;
+    margin: 0 10px;
+}
+
+.card-container {
+    margin-top: 20px;
+}

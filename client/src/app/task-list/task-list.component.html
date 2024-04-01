@@ -1,0 +1,20 @@
+<div class="columns">
+    <div class="column" cdkDropList (cdkDropListDropped)="onTaskDropped($event, 0)">
+        <h2>To Do</h2>
+        <div class="card-container" *ngFor="let task of tasks.filter(t => t.status === 0)">
+            <app-task-card [task]="task" (dragStart)="onDragStart($event)"></app-task-card>
+        </div>
+    </div>
+    <div class="column" cdkDropList (cdkDropListDropped)="onTaskDropped($event, 1)">
+        <h2>In Progress</h2>
+        <div class="card-container" *ngFor="let task of tasks.filter(t => t.status === 1)">
+            <app-task-card [task]="task" (dragStart)="onDragStart($event)"></app-task-card>
+        </div>
+    </div>
+    <div class="column" cdkDropList (cdkDropListDropped)="onTaskDropped($event, 2)">
+        <h2>Done</h2>
+        <div class="card-container" *ngFor="let task of tasks.filter(t => t.status === 2)">
+            <app-task-card [task]="task" (dragStart)="onDragStart($event)"></app-task-card>
+        </div>
+    </div>
+</div>

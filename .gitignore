@@ -6,8 +6,9 @@
 /out-tsc
 /bazel-out
 
+/server/vendor/
 # Node
-/node_modules
+/client/node_modules
 npm-debug.log
 yarn-error.log
 
